@@ -36,21 +36,21 @@
 
 |---|---|---|
 
-| La app abre sin crash | Pendiente | |
+| La app abre sin crash | Aprobada | |
 
-| La versión está definida en `pubspec.yaml` | Pendiente | |
+| La versión está definida en `pubspec.yaml` | Aprobada | |
 
 | El flujo principal funciona | Pendiente | |
 
-| La app permite crear productos | Pendiente | |
+| La app permite crear productos | Aprobada | |
 
 | La app valida productos sin título | Pendiente | |
 
 | La app muestra estado Loading | Pendiente | |
 
-| La app muestra estado Empty | Pendiente | |
+| La app muestra estado Empty | Aprobada | |
 
-| La app muestra estado Data | Pendiente | |
+| La app muestra estado Data | Aprobada | |
 
 | La app maneja errores sin mostrar stacktrace al usuario | Pendiente | |
 
@@ -62,7 +62,7 @@
 
 | La matriz mínima de pruebas fue ejecutada | Pendiente | |
 
-| No hay bugs P1 abiertos | Pendiente | |
+| No hay bugs P1 abiertos | Aprobada | |
 
 | Los bugs P2 y P3 están documentados | Pendiente | |
 
@@ -76,9 +76,6 @@
 
 \## Resultado de la evaluación
 
-
-
-Marcar una opción:
 
 
 
@@ -133,11 +130,11 @@ Ejemplos:
 
 
 
-\- Implementar la matriz de pruebas.
+\- Completar la matriz de pruebas.
 
 \- Reintentar sincronización con Firebase.
 
-\- Mejorar notificaciones (errore, cargando).
+\- Mejorar notificaciones (errores, cargando).
 
 \- Actualizar interfaz para mostrar los estados.
 

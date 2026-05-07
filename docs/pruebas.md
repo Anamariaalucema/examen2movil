@@ -1,8 +1,3 @@
-
-
-
-
-
 \# Matriz mínima de pruebas - Inventario RC
 
 
@@ -89,17 +84,17 @@ Se busca evidenciar:
 
 |---|---|---|---|---|---|---|
 
-| CP-01 | Inicio | Abrir la app | Ejecutar la app en web o Android | La app abre sin pantalla blanca ni crash | Pendiente | |
+| CP-01 | Inicio | Abrir la app | Ejecutar la app en web o Android | La app abre sin pantalla blanca ni crash | Aprobado | |
 
-| CP-02 | Build | Verificar versión | Revisar `pubspec.yaml` | La app tiene versión definida, por ejemplo `1.0.0+1` | Pendiente | |
+| CP-02 | Build | Verificar versión | Revisar `pubspec.yaml` | La app tiene versión definida, por ejemplo `1.0.0+1` | Aprobado | |
 
-| CP-03 | Datos | Cargar productos locales | Abrir la pantalla principal | La app muestra productos existentes o estado vacío | Pendiente | |
+| CP-03 | Datos | Cargar productos locales | Abrir la pantalla principal | La app muestra productos existentes o estado vacío | Aprobado | |
 
 | CP-04 | UI State | Loading inicial | Abrir la app o simular carga lenta | Se muestra un indicador de carga y la app no parece congelada | Pendiente | |
 
-| CP-05 | UI State | Lista vacía | Ejecutar la app sin productos registrados | Se muestra un mensaje claro de estado vacío | Pendiente | |
+| CP-05 | UI State | Lista vacía | Ejecutar la app sin productos registrados | Se muestra un mensaje claro de estado vacío | Aprobado | |
 
-| CP-06 | Funcionalidad | Crear producto válido | Presionar “Nuevo producto”, ingresar título y descripción, guardar | El producto aparece en la lista | Pendiente | |
+| CP-06 | Funcionalidad | Crear producto válido | Presionar “Nuevo producto”, ingresar título y descripción, guardar | El producto aparece en la lista | Aprobado | |
 
 | CP-07 | Validación | Crear producto sin título | Abrir formulario y guardar sin escribir título | La app muestra validación y no guarda el producto | Pendiente | |
 
@@ -107,9 +102,9 @@ Se busca evidenciar:
 
 | CP-09 | Funcionalidad | Eliminar producto | Eliminar un producto al darle clic al  botón eliminar | El producto se elimina de la vista | Pendiente | 
 
-| CP-10 | Funcionalidad | Editar producto | Editar un producto al darle clic al botón editar | Debe abrise la vista con el formulario para editar los valores correspondientes | Pendiente | 
+| CP-10 | Funcionalidad | Editar producto | Editar un producto al darle clic al botón editar | Debe abrise la vista con el formulario para editar los valores correspondientes | Aprobado | 
 
-| CP-11 | Sincronización | Ver estado sincronizado | Crear una producto con conexión normal | La producto queda como “Sincronizada” si Firebase responde correctamente | Pendiente | |
+| CP-11 | Sincronización | Ver estado sincronizado | Crear una producto con conexión normal | La producto queda como “Sincronizada” si Firebase responde correctamente | Aprobado | |
 
 | CP-12 | Sincronización | Error de red | Usar el menú QA: “simular error de red” | La app no crashea y la producto queda como “Sincronización pendiente” | Pendiente | |
 

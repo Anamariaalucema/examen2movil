@@ -20,13 +20,13 @@ Build evaluada: 1.0.0+1
 
 \- \[X ] Se pueden crear productos.
 
-\- \[ ] Se pueden editar productos.
+\- \[ X] Se pueden editar productos.
 
 \- \[ ] Se pueden eliminar productos.
 
-\- \[ ] La app muestra si una tarea está sincronizada o pendiente.
+\- \[X ] La app muestra si una tarea está sincronizada o pendiente.
 
-\- \[ ] La app no se rompe si Firebase falla.
+\- \[X ] La app no se rompe si Firebase falla.
 
 
 
@@ -36,11 +36,11 @@ Build evaluada: 1.0.0+1
 
 \- \[ ] Loading implementado.
 
-\- \[ ] Empty implementado.
+\- \[X ] Empty implementado.
 
 \- \[ ] Error implementado.
 
-\- \[ ] Data implementado.
+\- \[ X] Data implementado.
 
 \- \[ ] Offline considerado.
 
@@ -52,27 +52,15 @@ Build evaluada: 1.0.0+1
 
 
 
-\- \[ ] Sin print() innecesarios.
+\- \[ X] Sin print() innecesarios.
 
-\- \[ ] Sin tokens en logs.
+\- \[X ] Sin tokens en logs.
 
-\- \[ ] Sin contraseñas en logs.
+\- \[X ] Sin contraseñas en logs.
 
-\- \[ ] Sin archivos .jks en Git.
+\- \[X ] Sin archivos .jks en Git.
 
-\- \[ ] Sin key.properties en Git.
-
-
-
-\## Entrega
+\- \[ X] Sin key.properties en Git.
 
 
-
-\- \[ ] README actualizado.
-
-\- \[ ] Matriz de pruebas completa.
-
-\- \[ ] Bugs conocidos documentados.
-
-\- \[ ] Declaración de RC escrita.
 
