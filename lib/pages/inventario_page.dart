@@ -78,6 +78,16 @@ class _InventarioPageState extends State<InventarioPage> {
     }
   }
 
+  Future<void> _deleteProducto(ProductoModel producto) async {
+    if (producto.id == null) return;
+    try {
+      await widget.repository.deleteProducto(producto.id!);
+      _showSnackBar('Producto eliminado correctamente.');
+    } catch (e) {
+      _showSnackBar('No se pudo eliminar el producto.');
+    }
+  }
+
   Future<void> _refreshFromRemote() async {
     try {
       await widget.repository.refreshFromRemote();
@@ -209,7 +219,8 @@ class _InventarioPageState extends State<InventarioPage> {
             itemCount: productos.length,
             itemBuilder: (_, i) => ProductoTile(
               producto: productos[i],
-              onEdit: () => _editProducto(productos[i])
+              onEdit: () => _editProducto(productos[i]),
+              onDelete: () => _deleteProducto(productos[i])
             ),
           );
         },

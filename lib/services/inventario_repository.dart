@@ -69,6 +69,7 @@ class InventarioRepository {
   }
 
   Future<void> deleteProducto(int id) async {
+    await remoteService.deleteProducto(id);
     await localDb.deleteProducto(id);
   }
 

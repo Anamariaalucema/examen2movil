@@ -21,6 +21,18 @@ class InventarioRemoteService {
     }
   }
 
+  Future<void> deleteProducto(int id) async {
+    try {
+      await _productosRef.doc(id.toString()).delete();
+    } on FirebaseException {
+      rethrow;
+    } on SocketException {
+      rethrow;
+    } catch (_) {
+      rethrow;
+    }
+  }
+
   Future<List<ProductoModel>> fetchProductos() async {
     try {
       final snapshot = await _productosRef.get();

@@ -5,11 +5,13 @@ import '../models/inventario_model.dart';
 class ProductoTile extends StatelessWidget {
   final ProductoModel producto;
   final VoidCallback? onEdit;
+  final VoidCallback? onDelete;
 
   const ProductoTile({
     super.key,
     required this.producto,
     this.onEdit,
+    this.onDelete
   });
 
   @override
@@ -26,10 +28,20 @@ class ProductoTile extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
-        trailing: IconButton(
-          tooltip: 'Editar producto',
-          onPressed: onEdit,
-          icon: const Icon(Icons.edit_outlined),
+        trailing: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            IconButton(
+              tooltip: 'Editar producto',
+              onPressed: onEdit,
+              icon: const Icon(Icons.edit_outlined),
+            ),
+            IconButton(
+              tooltip: 'Eliminar producto',
+              onPressed: onDelete,
+              icon: const Icon(Icons.delete_outline),
+            ),
+          ],
         ),
 
         subtitle: Column(
