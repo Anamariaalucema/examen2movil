@@ -53,11 +53,12 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBw_Jz_L9gIXR-RMRSjAxmgVBgUaU0sP1c',
-    appId: '1:963296376531:web:0d3ab6c00945b3d810c626',
-    messagingSenderId: '963296376531',
-    projectId: 'entrega-2-movil-2026-1',
-    authDomain: 'entrega-2-movil-2026-1.firebaseapp.com',
-    storageBucket: 'entrega-2-movil-2026-1.firebasestorage.app',
+      apiKey: "AIzaSyBkpj6ggeKiqtoWY5UcS4ui4b5rfLFlHIg",
+      authDomain: "inventario-movil-app.firebaseapp.com",
+      projectId: "inventario-movil-app",
+      storageBucket: "inventario-movil-app.firebasestorage.app",
+      messagingSenderId: "67771913503",
+      appId: "1:67771913503:web:82ce04cc02788c55de8c2a",
+      measurementId: "G-ZB75LC3CBT"
   );
 }
