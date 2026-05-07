@@ -7,24 +7,21 @@ import 'services/inventario_remote_service.dart';
 import 'services/inventario_repository.dart';
 import 'pages/inventario_page.dart';
 
-Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+void main() {
+  runZonedGuarded(() async {
+    WidgetsFlutterBinding.ensureInitialized();
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
 
-  runZonedGuarded(
-    () async {
-      final database = AppDatabase();
-      final remoteService = InventarioRemoteService();
-      final repository = InventarioRepository(
-        localDb: database,
-        remoteService: remoteService,
-      );
-      runApp(MyApp(repository: repository));
-    },
-    (error, stack) {},
-  );
+    final database = AppDatabase();
+    final remoteService = InventarioRemoteService();
+    final repository = InventarioRepository(
+      localDb: database,
+      remoteService: remoteService,
+    );
+    runApp(MyApp(repository: repository));
+  }, (error, stack) {});
 }
 
 class MyApp extends StatelessWidget {

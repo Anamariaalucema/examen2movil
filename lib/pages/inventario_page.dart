@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_inventario/data/app_database.dart';
 import '../models/inventario_model.dart';
 import '../services/inventario_repository.dart';
 import '../widgets/producto_form_dialog.dart';

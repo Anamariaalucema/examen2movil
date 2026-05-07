@@ -1,5 +1,3 @@
-import 'package:flutter/rendering.dart';
-
 class ProductoModel {
   final int? id;
   final String nombreProducto;
